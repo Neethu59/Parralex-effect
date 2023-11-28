@@ -1,0 +1,232 @@
+
+  .caroset-button{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #000;
+    
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 28px;
+    /* padding: 5px 20px; */
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+  .caroset-button:hover{
+        background: rgb(251, 193, 245);
+  }
+  
+ 
+  }
+  .image-box{
+    position: absolute;
+  top: -187%;
+  width: 100%; /* Reference to the parent's width */
+  height: 100%; 
+   
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    color: black;
+    padding: 10px;
+  }
+  .cardStyle{
+    border: none;
+  }
+  .hrText{
+    max-width: 50%;  
+    margin: 40px auto;
+    color: black;
+  }
+  
+  .hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    &:before {
+      content: '';
+      
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      
+      color: #818078;
+      background-color: #fcfcfa;
+    }
+  }
+  .carouselWrapper{
+    position:relative,
+  
+
+  }
+   .carosel-text{
+font-size: 1vw;
+   } 
+   .carosel-text1{
+    font-size: 3vw;
+       } 
+   .carosel-text2{
+    font-size: 1.2vw;
+       } 
+  .parastyle{
+    color:grey;
+    font-size:12px;
+    padding:10px
+  }
+  .trproduct{
+    margin-top:15%
+  }
+  .hrcolor{
+    color: gray;
+  }
+  .trendproduct{
+    font-size:30px;padding:0;margin:0
+  }
+  .card-container{
+    width:950px
+  }
+  .hrwidth{
+    width:900px
+  }
+  .footer{
+    color:white
+  }
+  .tcardstyle{
+    color: rgb(185, 129, 26);
+  }
+  /* .navbar-toggler {
+    display: block;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    a {
+      text-decoration: none;
+      color: #232323;
+      transition: all 0.3s ease;
+      &:hover {
+        color: tomato;
+      }
+    }
+  } */
+  /* //nav css */
+
+ 
+
+     @media only screen and (max-width: 768px) {
+      .carousel-item{
+        display: block;
+      }
+      .caroset-button1{
+        /* width:40%; */
+        padding:0
+        
+      }
+    
+      .caroselinner{
+         margin-bottom: 20%; 
+      }
+      .caroselcard{
+        margin-bottom:4%;
+        width: 50%;
+        
+      }
+      /* .card-mobile{
+        width:30%;
+        margin-top: 20%;
+      } */
+      .card-mobile{
+        width:40%;
+        justify-content: center;
+      }
+      .carosel-text-bottle{
+        font-size: 2vw;
+      }
+
+      .caroset-button{
+        display: inline-block;
+        outline: 0;
+        cursor: pointer;
+        border: 2px solid #000;
+        border-radius: 3px;
+        color: #000;
+        
+        font-size: 8px;
+        font-weight: 600;
+        line-height: 15px;
+        /* padding: 5px 20px; */
+        text-align:center;
+        transition-duration: .15s;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+      .caroset-button:hover{
+            background: rgb(251, 193, 245);
+      }
+      
+     
+      }
+     }
+    @media only screen and (min-width: 768px) {
+      .caroselcard{
+        margin-bottom: 18%;
+        width: 50%;
+        
+      }
+      /* .carosel-text-bottle{
+        font-size: 2vw;
+      } */
+      .caroset-button1{
+        width:40%
+        
+      }
+
+      .carousel-item{
+        height:20%;
+      }
+      .cardheight{
+        height:30vh;
+      }
+
+    }
+
+    @media only screen and (max-width: 1023px) {
+      .caroset-button1{
+        width:40%
+
+      }
+      .caroset-button{
+        width:20%
+
+      }
+      .carosel-text{
+        width: 1vw;
+      }
+       
+      /* Your styles for screens with a maximum width of 1023 pixels (mobile and tablets) go here */
+    }
